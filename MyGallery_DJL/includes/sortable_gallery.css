@@ -1,0 +1,91 @@
+/*  CSS Document - lynda.com  */
+
+body {
+	margin: 0px;
+	padding: 20px 10px 20px 30px;
+	font: 14px Arial;
+	color: #F2DF91;
+	background-color: #000;
+}
+p { margin: 0px 0px 1em 0px; }
+a, a:visited { color: #00f; }
+img.background { position: fixed; right: 0px; bottom: 0px; }
+
+.title {
+	position: fixed;
+	top: 0px;
+	left: 25px;
+	width: 70px;
+	height: 100%;
+	background: url(../images/title_large_1.png) no-repeat 0px 5px;
+}
+
+.gallery { width: 85%; margin: 0px auto; position: relative; }
+
+.gallery .sorting { 
+	margin: 0px 0px 15px 0px; 
+	border: 1px solid #F2DF91;
+	border-radius: 25px; 
+	background-color: rgba(109,77,46,.3);  }
+.gallery .sorting span { 
+	padding: 0px 20px 0px 0px; 
+	color: #F2DF91; 
+	font-style: normal;
+	font-size: 3em;
+	font-family:'Economica', sans-serif;  }
+.gallery .sorting div { margin: 10px 0px 10px 10px; }
+.gallery .sorting a {
+	color: #fff;
+	font-family:'Economica', sans-serif;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-transform: none;
+	padding: 3px 20px 3px 20px;
+	background: url(../images/check_normal_4.gif) no-repeat 0px 8px;
+}
+.gallery .sorting a:hover { color: #F2DF91; }
+.gallery .sorting a.selected { color: #F2DF91; background-image: url(../images/check_selected_1.gif); }
+
+.gallery .photos .thumbnail_container { position: relative; }
+.gallery .photos .thumbnail_container a.thumbnail { position: absolute; }
+.gallery .photos .thumbnail_container a.thumbnail img { width: 75px; height: 75px; border: 1px solid #6d4d2e; }
+
+.clear_both {clear: both; line-height: 1px;}
+
+
+
+/* Vertical */
+@media screen and (min-height: 50px) and (max-height:520px) {
+	.title { background-image: url(../images/title_small_1.png); }
+
+}
+@media screen and (min-height: 521px) and (max-height:700px) {
+	.title { background-image: url(../images/title_medium_1.png); }
+
+}
+@media screen and (min-height: 701px) {
+	.title { background-image: url(../images/title_large_1.png); }
+
+}
+
+/* Horizonal */
+@media screen and (min-width: 50px) and (max-width:500px) {
+	.title { background-image: url(../images/title_small_1.png); }
+	body {padding: 5px 0px 0px 5px;}
+	.gallery {width: auto; margin-left: 35px;}
+	.gallery .sorting span {display: block; color: #e5aa2c; padding: 0px 0px 20px 0px;}
+	.gallery .sorting a {display: block;}
+
+}
+@media screen and (min-width: 501px) and (max-width:960px) {
+	.title { background-image: url(../images/title_medium_1.png); }
+	.gallery .sorting span {display: block; padding: 0px 0px 20px 0px;}
+	.gallery .sorting a {display: block; width: 35%; float: left; margin-bottom: 5px;}
+}
+@media screen and (min-width: 961px) {
+	.title { background-image: url(../images/title_large_1.png); }
+	.gallery .sortiing span {padding: 0px 20px 0px 0px;}
+}
+
+
+
